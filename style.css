@@ -1,0 +1,76 @@
+* {
+    font-family: "Sofia", sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("todoo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.form {
+    width: 300px;
+    margin-right: 15%; 
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 10px;
+    font-family: cursive;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #ccc;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.list li {
+    padding: 15px;
+    font-family: cursive;
+    border-top: dotted;
+    border-color: darkgray;
+    position: relative;
+}
+
+.list li .fa-trash {
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.list li .fa-check-square {
+    color: green;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.list li.checked {
+    color: darkgray;
+    text-decoration: line-through;
+}
